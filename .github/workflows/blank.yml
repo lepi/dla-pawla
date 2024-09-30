@@ -6,8 +6,8 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   # workflow_dispatch
-  workflow_dispatch:
-    inputs:
+  #workflow_dispatch:
+  #  inputs:
   push:
     branches: [ "main" ]
   pull_request:
@@ -49,7 +49,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Dir
-        run: ls -la        
+        run: ls -la
+      - name: Fail
+        run: exit 1
       - name: Run the program
         run: java main.java
         
