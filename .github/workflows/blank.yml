@@ -34,3 +34,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  paralell-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First step in paralell build
+        run: echo This is a first step in a paralell build
