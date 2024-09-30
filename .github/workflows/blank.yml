@@ -53,7 +53,6 @@ jobs:
       - name: Fail
         run: exit 1
       - name: Run the program
-        if: ${{ failure() }}
-        if: 1==1
+        if: ${{ failure() }} and 1==1
         run: java main.java
         
