@@ -6,6 +6,8 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   # workflow_dispatch
+  workflow_dispatch:
+    inputs:
   push:
     branches: [ "main" ]
   pull_request:
