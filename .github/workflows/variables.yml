@@ -21,7 +21,7 @@ jobs:
       step_var1: "Step Variable Value"
 
   - name: Set user_name Varaible
-    run: echo "::set-env name=user_name::Chandrasekara"
+    run: echo "::set-env name=user_name::"
 
   - name: Set new_var Varaible
     run: echo "::set-env name=new_var::newvarvalue"
